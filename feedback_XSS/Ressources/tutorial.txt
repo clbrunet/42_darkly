@@ -1,0 +1,9 @@
+How to get the flag :
+
+Go to IP/index.php?page=feedback
+Fill name with 'e', and submit
+
+
+How to solve HTTP parameter pollution :
+
+Server side conversion of special characters to HTML entities
