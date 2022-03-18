@@ -1,0 +1,11 @@
+How to get the flag :
+
+Go to IP/index.php?page=recover
+Edit input value attribute with Chrome DevTools
+Submit
+
+
+How to solve :
+
+Do not put secret things in front-end files (HTML etc).
+Server side form validation
