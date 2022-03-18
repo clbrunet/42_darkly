@@ -1,0 +1,10 @@
+How to get the flag :
+
+Go to IP/index.php?page=survey
+Fill name with 'e', and submit
+With Chrome DevTools, edit a select html to send a unwanted value by selecting it
+
+
+How to solve :
+
+Server side form validation
