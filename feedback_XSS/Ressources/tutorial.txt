@@ -4,6 +4,12 @@ Go to IP/index.php?page=feedback
 Fill name with 'e', and submit
 
 
-How to solve HTTP parameter pollution :
+How to solve XSS :
 
 Server side conversion of special characters to HTML entities
+
+
+XSS attack example :
+
+Set name to <button onclick="console.log('sending data to hacker...');">CLICK ME</button>
+Submit
