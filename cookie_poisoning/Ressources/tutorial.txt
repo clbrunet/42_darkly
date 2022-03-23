@@ -1,0 +1,12 @@
+How to get the flag :
+
+1. Search for application cookies
+2. Decode the I_am_admin value using https://www.dcode.fr/hash-function
+3. Encode 'true' using https://www.dcode.fr/hash-function
+4. In Chrome DevTools console : document.cookie='I_am_admin=b326b5062b2f0e69046810717534cb09'
+5. Refresh
+
+
+How to solve Cookie Poisoning :
+
+Don't put sensitive information in cookies, and do not trust them.
