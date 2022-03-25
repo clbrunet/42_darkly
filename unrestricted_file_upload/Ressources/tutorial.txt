@@ -1,0 +1,11 @@
+How to get the flag :
+
+Go to IP/index.php?page=upload
+
+Uploading of jpeg works
+Upload a php file with 'image/jpeg' as Content-Type
+
+
+How to solve unrestricted file upload :
+
+Server side validation
