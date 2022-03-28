@@ -1,0 +1,17 @@
+How to get the flag :
+
+Go to IP/robots.txt
+Go to IP/.hidden/
+
+Check every README for the flag
+
+cat script_output.txt \
+| grep --invert-match "Demande à ton voisin" \
+| grep --invert-match "Toujours pas tu vas craquer non ?" \
+| grep --invert-match "Non ce n'est toujours pas bon ..." \
+| grep --invert-match "Tu veux de l'aide ? Moi aussi \!"
+
+
+How to prevent :
+
+Disable directory listing (autoindex) in the web server configuration. 
