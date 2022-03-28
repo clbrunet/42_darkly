@@ -1,0 +1,14 @@
+How to get the flag :
+
+Go to IP/robots.txt
+Go to IP/whatever and download 'htpasswd'
+
+Decode the password : https://md5calc.com/hash/md5/dragon
+
+Go to IP/admin and log in with 'root' as username and 'dragon' as password
+
+
+How to prevent :
+
+Do not make credentials and private data publicly available.
+Disable auto-indexing in the web server configuration.
